@@ -1,0 +1,31 @@
+SQUARING START 100  
+
+VAR-A    WORD 5 
+VAR-B    WORD 1 
+
+         LDA VAR-A  
+         ADD VAR-B
+         STA A-PLUS-B
+  
+         LDA A-PLUS-B
+         MUL A-PLUS-B
+
+A-PLUS-B RESW 1
+
+         END SQUARING  
+.This program calculates (a+b_^2 when a=5, b=1
+.Load this program at memory location 100
+
+.Defines a constant named VAR-A initialized to 5.
+.Defines a constant named VAR-A initialized to 1.
+
+.Load accumulator(A) with 5
+.Add 1 to accumulator
+.Store 6 into the memory location A-PLUS-B
+
+.Load accumulator with 6 
+.Multiply accumulator content by 6
+
+.Reserve a word
+
+.End of program
