@@ -1,15 +1,6 @@
-SQUARING START 100  
-
-VAR-A WORD 5 
-VAR-B WORD 1 
-LDA VAR-A  
-ADD VAR-B
-STA A-PLUS-B
-LDA A-PLUS-B
-MUL A-PLUS-B
-A-PLUS-B RESW 1
-
-         END SQUARING  
+SQUARING START 100 
+VAR-A WORD 5 VAR-B WORD 1 LDA VAR-A ADD VAR-B STA A-PLUS-B LDA A-PLUS-B MUL A-PLUS-B A-PLUS-B RESW 1 
+END SQUARING  
 .This program calculates (a+b_^2 when a=5, b=1
 .Load this program at memory location 100
 
